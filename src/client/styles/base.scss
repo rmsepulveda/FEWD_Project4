@@ -1,3 +1,7 @@
+$hovercolor: rgb(45, 228, 21);
+$font_stack: Roboto, sans-serif;
+$anchorcolor: #000;
+$backcolor: rgba(66, 79, 201, 0.8);
 body {
     display: flex;
     justify-content: center;
@@ -10,6 +14,7 @@ main {
     flex: 2;
     justify-content: center;
     text-align: center;
+    background: $backcolor;
     margin: 2rem;
     
 }
