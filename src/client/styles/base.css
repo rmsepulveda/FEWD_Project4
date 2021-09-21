@@ -3,7 +3,7 @@ body {
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    
+    background-color: cornflowerblue;
 }
 
 main {
@@ -25,10 +25,10 @@ section {
 
 a:link,
 a:visited {
-    color: chocolate;
+    color: rgb(14, 13, 13);
     
 }
 
 a:hover {
-    color: coral;
+    color: rgb(8, 8, 8);
 }
