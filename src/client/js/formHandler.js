@@ -5,7 +5,7 @@ function handleSubmit(event) {
 
     // checks if user URL input is valid - if true call postApi
     if(Client.checkForName(formText)) {
-        console.log(formText)
+        //console.log(formText)
         //call postData fucntion with route /api
         Client.postApi('http://localhost:3000/api', {url: formText})
             // write return data to web page form
@@ -20,9 +20,9 @@ function handleSubmit(event) {
                 resDataToHtml += `Irony:  ${res.irony}`;
                 //write results to web page
                 document.getElementById('results').innerHTML = resDataToHtml;
-                if(res.model != "general_en"){//check for bad data
-                    alert('Something went wrong with your request. Please try another URL.');
-                }
+                //if(res.model != "general_en"){//check for bad data
+                   // alert('Something went wrong with your request. Please try another URL.');
+                //}
             })
     } else {
         alert('Invalid URL, please try with a valid URL.');

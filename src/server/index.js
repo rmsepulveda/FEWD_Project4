@@ -32,10 +32,10 @@ app.get('/', function (req, res) {
 // route /api fetch API data
 let userInput = []
 app.post('/api', async function(req, res) {
-    console.log(apiKey)
+    //console.log(apiKey)
     
     userInput = req.body.url;
-    console.log(userInput)
+    //console.log(userInput)
     const apiURL = `${baseURL}key=${apiKey}&url=${userInput}&lang=en`
     console.log(apiURL)
     const response = await fetch(apiURL)
