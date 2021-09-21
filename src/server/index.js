@@ -30,7 +30,7 @@ app.get('/', function (req, res) {
 })
 
 // route /api fetch API data
-let userInput = []
+//let userInput = []
 app.post('/api', async function(req, res) {
     //console.log(apiKey)
     
@@ -42,7 +42,7 @@ app.post('/api', async function(req, res) {
     //const response = await fetch(apiURL)
     //const objectData = await response.json()
     const response = await axios(apiURL)
-    console.log('response=========>', response)
+    console.log('response =======>', response)
     //res.send(objectData)
     res.send(response.data)
     
