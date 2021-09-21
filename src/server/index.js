@@ -24,27 +24,19 @@ app.use(express.static('dist'))
 // API URL setup and API Key
 const baseURL = 'https://api.meaningcloud.com/sentiment-2.1?'
 const apiKey = process.env.API_KEY
-//const apiKey = '7477b63fd6e5361b2da11527e9671fe3'
 app.get('/', function (req, res) {
     // res.sendFile('dist/index.html')
     res.sendFile(path.resolve('dist/index.html'))
 })
 
 // route /api fetch API data
-//let userInput = []
 app.post('/api', async function(req, res) {
     //console.log(apiKey)
-    
-    //userInput = req.body.url;
-    //console.log(userInput)
     //const apiURL = `${baseURL}key=${apiKey}&url=${userInput}&lang=en`
     const apiURL = `https://api.meaningcloud.com/sentiment-2.1?key=${apiKey}&url=${req.body.url}&lang=en`
     console.log(apiURL)
-    //const response = await fetch(apiURL)
-    //const objectData = await response.json()
     const response = await axios(apiURL)
     //console.log('response =======>', response)
-    //res.send(objectData)
     res.send(response.data)
     
 
