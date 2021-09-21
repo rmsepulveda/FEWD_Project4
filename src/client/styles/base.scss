@@ -1,4 +1,4 @@
-$hovercolor: rgb(45, 228, 21);
+$hovercolor: rgb(31, 13, 196);
 $font_stack: Roboto, sans-serif;
 $anchorcolor: #000;
 $backcolor: rgba(66, 79, 201, 0.8);
@@ -14,7 +14,7 @@ main {
     flex: 2;
     justify-content: center;
     text-align: center;
-    background: $backcolor;
+    background: linear-gradient(to left, red, blue);
     margin: 2rem;
     border-radius: 25px;
     
@@ -31,10 +31,10 @@ section {
 
 a:link,
 a:visited {
-    color: rgb(14, 13, 13);
+    color: $anchorcolor;
     
 }
 
 a:hover {
-    color: rgb(8, 8, 8);
+    color:$hovercolor;
 }
