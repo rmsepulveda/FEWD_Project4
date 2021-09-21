@@ -3,6 +3,4 @@ function checkForName(inputURL) {
     return (chkURL !== null)
  }
 
-
-
 export { checkForName }
