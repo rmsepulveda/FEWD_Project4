@@ -4,6 +4,7 @@ const mockAPIResponse = require('./mockAPI.js')
 const fetch = require('node-fetch');
 const bodyParser = require('body-parser')
 const dotenv = require('dotenv');
+const { default: axios } = require('axios');
 dotenv.config();
 const cors = require('cors');
 const app = express()
@@ -37,12 +38,12 @@ app.post('/api', async function(req, res) {
     //userInput = req.body.url;
     //console.log(userInput)
     //const apiURL = `${baseURL}key=${apiKey}&url=${userInput}&lang=en`
-    const apiURL = `https://api.meaningcloud.com/sentiment-2.1?key=7477b63fd6e5361b2da11527e9671fe3&url=${req.body.url}&lang=en`
+    const apiURL = `https://api.meaningcloud.com/sentiment-2.1?key=${apiKey}&url=${req.body.url}&lang=en`
     console.log(apiURL)
     //const response = await fetch(apiURL)
     //const objectData = await response.json()
     const response = await axios(apiURL)
-    console.log('response =======>', response)
+    //console.log('response =======>', response)
     //res.send(objectData)
     res.send(response.data)
     
