@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(express.static('dist'))
 
 // API URL setup and API Key
-const baseURL = 'https://api.meaningcloud.com/sentiment-2.1?'
+//const baseURL = 'https://api.meaningcloud.com/sentiment-2.1?'
 const apiKey = process.env.API_KEY
 app.get('/', function (req, res) {
     // res.sendFile('dist/index.html')

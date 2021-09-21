@@ -20,9 +20,9 @@ function handleSubmit(event) {
                 resDataToHtml += `Irony:  ${res.irony}`;
                 //write results to web page
                 document.getElementById('results').innerHTML = resDataToHtml;
-                //if(res.model != "general_en"){//check for bad data
-                   // alert('Something went wrong with your request. Please try another URL.');
-                //}
+                if(res.model != "general_en"){//check for bad data
+                   alert('Something went wrong with your request. Please try another URL.');
+                }
             })
     } else {
         alert('Invalid URL, please try with a valid URL.');
