@@ -34,14 +34,19 @@ let userInput = []
 app.post('/api', async function(req, res) {
     //console.log(apiKey)
     
-    userInput = req.body.url;
+    //userInput = req.body.url;
     //console.log(userInput)
-    const apiURL = `${baseURL}key=${apiKey}&url=${userInput}&lang=en`
+    //const apiURL = `${baseURL}key=${apiKey}&url=${userInput}&lang=en`
+    const apiURL = `https://api.meaningcloud.com/sentiment-2.1?key=7477b63fd6e5361b2da11527e9671fe3&url=${req.body.url}&lang=en`
     console.log(apiURL)
-    const response = await fetch(apiURL)
-    const objectData = await response.json()
-    console.log(objectData)
-    res.send(objectData)
+    //const response = await fetch(apiURL)
+    //const objectData = await response.json()
+    const response = await axios(apiURL)
+    console.log('response=========>', response)
+    //res.send(objectData)
+    res.send(response.data)
+    
+
 })
 
 // designates what port the app will listen to for incoming requests
