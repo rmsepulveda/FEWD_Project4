@@ -40,7 +40,7 @@ app.post('/api', async function(req, res) {
     console.log(apiURL)
     const response = await fetch(apiURL)
     const objectData = await response.json()
-    
+    console.log(objectData)
     res.send(objectData)
 })
 
