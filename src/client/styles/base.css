@@ -3,7 +3,7 @@ body {
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    background: center / cover no-repeat url(../img/background.jpg) fixed;
+    
 }
 
 main {
@@ -11,9 +11,7 @@ main {
     justify-content: center;
     text-align: center;
     margin: 2rem;
-    font: 200 1rem $font_stack;
-    background: $backcolor;
-    border-radius: 10px;
+    
 }
 
 p {
@@ -27,10 +25,10 @@ section {
 
 a:link,
 a:visited {
-    color: $anchorcolor;
+    color: chocolate;
     
 }
 
 a:hover {
-    color: $hovercolor;
+    color: coral;
 }
