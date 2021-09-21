@@ -1,16 +1,8 @@
-function checkForName(inputText) {
-    console.log("::: Running checkForName :::", inputText);
-    let names = [
-        "Picard",
-        "Janeway",
-        "Kirk",
-        "Archer",
-        "Georgiou"
-    ]
+function checkForName(inputURL) {
+    let chkURL = inputURL.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
+    return (chkURL !== null)
+ }
 
-    if(names.includes(inputText)) {
-        alert("Welcome, Captain!")
-    }
-}
+
 
 export { checkForName }

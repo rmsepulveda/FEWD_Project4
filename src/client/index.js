@@ -1,5 +1,7 @@
 import { checkForName } from './js/nameChecker'
 import { handleSubmit } from './js/formHandler'
+import { postApi } from './js/utils'
+import { scoreConverter } from './js/utils'
 
 // sass files
 import './styles/resets.css'
@@ -17,5 +19,7 @@ console.log("CHANGE!!");
 
 export {
     checkForName,
-    handleSubmit
+    handleSubmit,
+    postApi,
+    scoreConverter
    }
