@@ -11,10 +11,10 @@ import './styles/form.css'
 import './styles/header.css'
 
 
-console.log(checkForName);
+//console.log(checkForName);
 
 //alert("I EXIST")
-console.log("CHANGE!!");
+//console.log("CHANGE!!");
 
 
 export {
