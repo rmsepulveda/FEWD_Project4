@@ -1,6 +1,6 @@
 import "babel-polyfill";
 import { scoreConverter } from "../src/client/js/utils"
-//import { postApi } from "../src/client/js/utils"
+import { postApi } from "../src/client/js/utils"
 
 describe("Testing the submit functionality", () => {
      test("Testing the postApi function", () => {
@@ -14,3 +14,8 @@ describe("Testing the submit functionality", () => {
     test("Testing the postApi function", () => {
         expect(1+1).toEqual(2);
 })});
+describe("Testing the submit functionality", () => {
+    test("Testing the postApi function", () => {
+        expect(postApi).toBeDefined();
+       })
+});
