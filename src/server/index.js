@@ -1,7 +1,7 @@
 var path = require('path')
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
-const fetch = require('node-fetch');
+//const fetch = require('node-fetch');
 const bodyParser = require('body-parser')
 const dotenv = require('dotenv');
 const { default: axios } = require('axios');
@@ -34,7 +34,7 @@ app.post('/api', async function(req, res) {
     //console.log(apiKey)
     //const apiURL = `${baseURL}key=${apiKey}&url=${userInput}&lang=en`
     const apiURL = `https://api.meaningcloud.com/sentiment-2.1?key=${apiKey}&url=${req.body.url}&lang=en`
-    console.log(apiURL)
+    //console.log(apiURL)
     const response = await axios(apiURL)
     //console.log('response =======>', response)
     res.send(response.data)

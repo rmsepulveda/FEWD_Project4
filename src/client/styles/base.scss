@@ -2,12 +2,13 @@ $hovercolor: rgb(31, 13, 196);
 $font_stack: Roboto, sans-serif;
 $anchorcolor: #000;
 $backcolor: rgba(66, 79, 201, 0.8);
+
 body {
     display: flex;
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    background-color: cornflowerblue;
+    background-color: rgb(100, 237, 157);
 }
 
 main {
@@ -31,7 +32,7 @@ section {
 
 a:link,
 a:visited {
-    color: $anchorcolor;
+    color: rgb(14, 13, 13);
     
 }
 
